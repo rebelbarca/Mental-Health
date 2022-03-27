@@ -1,0 +1,34 @@
+{
+  "name": "cosc2196assessmenttask2",
+  "version": "1.0.0",
+  "description": "Summary",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pozengineer/cosc2196AssessmentTask2.git"
+  },
+  "author": "Dhani Pozniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pozengineer/cosc2196AssessmentTask2/issues"
+  },
+  "homepage": "https://github.com/pozengineer/cosc2196AssessmentTask2#readme",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "axios": "^0.26.1",
+    "comment-json": "^4.2.2",
+    "express": "^4.17.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "jquery": "^3.6.0",
+    "json-stringify-safe": "^5.0.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7",
+    "require": "^2.4.20",
+    "util": "^0.12.4"
+  }
+}
