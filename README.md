@@ -1,5 +1,5 @@
 # Mental-Health
- 
+
 Summary
 
 The web application is a website that presents the skills and capabilities of the web
