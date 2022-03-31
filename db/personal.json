@@ -14,8 +14,22 @@
     "email": "s3807705@student.rmit.edu.au"
   },
   {
-    "id": 1,
+    "id": 2,
     "firstName": "Jayden", 
+    "lastName": "Pozniak",
+    "image":
+    "assets/images/profilePic01.jpg",
+    "alt": "profile picture",
+    "description": 
+    "I am a self/ goal-driven person who can work independently and as part of a team. I live in Sydney with my wife and kids and have a Bachelors Degree in Mechanical Engineering. My interest in IT began when I started pulling apart computers and putting them back together again. I am a highly motivated and hardworking individual. My education in full stack web development at the University of Sydney, and self-taught knowledge and experience combined with my interest, passion and enjoyment in coding, programming, Cloud Computing and Virtualization, will enable me to learn, contribute and excel in the Web Development Industry. My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilized in developing user-friendly web-based applications using html, css, javaScript, bootstrap, jQuery and many more coding languages and concepts.My degree in Mechanical Engineering showed me that it is important that function and making sure that what you build or create works in the way you intend before you worry about how it will look. I enjoy working out how things work and why they function the way they do. I enjoy the programming and back-end side of things which is why I would like to maybe venture into game programming. Cyber-security is another field that I would like to try. I like challenging myself to prove to myself that I am capable accomplishing anything that is thrown at me.",
+    "url": "https://pozengineer.github.io/cosc2196AssessmentTask1/ ",
+    "github": "https://github.com/pozengineer/",
+    "studentNum": "s3807705",
+    "email": "s3807705@student.rmit.edu.au"
+  },
+   {
+    "id": 3,
+    "firstName": "Jared", 
     "lastName": "Pozniak",
     "image":
     "assets/images/profilePic01.jpg",
