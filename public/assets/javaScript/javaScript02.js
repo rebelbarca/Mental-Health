@@ -55,7 +55,8 @@ $(document).ready(function () {
                     'aria-labelledby': "staticBackdropLabel", 'aria-hidden': "true"});
 
                     var div02El = $('<div>').addClass('modal-dialog');
-                    // div02El.attr('role', 'document');
+                    div02El.attr('role', 'document');
+                    div02El.css('pointer-events', 'all');
 
                     var div03El = $('<div>').addClass('modal-content');
                     var div04El = $('<div>').addClass('modal-header');

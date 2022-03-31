@@ -35,6 +35,8 @@ function handleRequest(req, res) {
             return displayProfile(res);
         case "/idealJob":
             return displayIdealJob(res);
+        case "/itTech":
+            return displayITTech(res);
         case "/projectIdea":
             return displayProjectIdea(res);
         default:
@@ -70,6 +72,18 @@ function displayProfile(res) {
 function displayIdealJob(res) {
     // Here we use the fs package to read our index.html file
     fs.readFile(__dirname + "./public/idealJob.html", function (err, data) {
+        if (err) throw err;
+        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
+        // an html file.
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(data);
+    });
+}
+
+// When someone visits the "http://localhost:3000/" path, this function is run.
+function displayITTech(res) {
+    // Here we use the fs package to read our index.html file
+    fs.readFile(__dirname + "./public/itTech.html", function (err, data) {
         if (err) throw err;
         // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
         // an html file.
@@ -116,6 +130,10 @@ app.get("/profile", function (req, res) {
 
 app.get("/idealJob", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/idealJob.html"));
+});
+
+app.get("/itTech", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/itTech.html"));
 });
 
 app.get("/projectIdea", function (req, res) {
