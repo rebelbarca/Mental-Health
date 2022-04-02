@@ -39,6 +39,15 @@ html, body {
     padding: 8px 80px;
 }
 
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
 .navbar-brand {
     /* font-family: "Georgia", "Times New Roman", Times, serif; */
     font-family: Verdana, "Geneva", sans-serif;
@@ -105,6 +114,7 @@ html, body {
     padding: 0;
     background-color: #212121;
     color: #ffffff !important;
+    /* text-align: left; */
 }
 
 .fa {
@@ -121,7 +131,7 @@ a:link {
 }
 
 a:hover {
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
     text-decoration: none;
 }
 
