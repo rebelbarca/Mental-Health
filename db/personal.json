@@ -13,5 +13,21 @@
     "github": "https://github.com/pozengineer/cosc2196AssessmentTask1/",
     "studentNum": "s3807705",
     "email": "s3807705@student.rmit.edu.au"
-  }
+  },
+  {
+    "id": 2,
+    "firstName": "Justin", 
+    "lastName": "Davis",
+    "image":
+    "assets/images/justin/justinHeadShot.PNG",
+    "alt": "profile picture",
+    "description": 
+    "My main hobby is gaming. I have multiple platforms I play on such as Xbox, PlayStation, Switch and PC however the platform I play on every night is my custom-built PC. I play a range of games with the most popular games recently being LOL, Battlefield, Rocket League, and Elden Rings.",
+    "paragraph":
+    "I have been interested in computers and gaming since I was a young child. Some of my best childhood memories are of when my uncle would bring over new PC parts for us to upgrade our family computer and when he brought over new PC games for me to play. From there my interest sparked and I became the family nerd; anytime there was an IT issue it would be brought to me first to fix. Due to my lack of formal education and experience within the IT industry my experience to date is purely from an enthusiast level.", 
+    "url": "https://juddy90.github.io/JustinDavisHTML/",
+    "github": "https://github.com/Juddy90/",
+    "studentNum": "s3941188",
+    "email": "s394188@student.rmit.edu.au"
+  },
 ]
