@@ -33,10 +33,16 @@ function handleRequest(req, res) {
             return displayRoot(res);
         case "/profile":
             return displayProfile(res);
+        case "/industryData":            
+            return displayIndustryData(res);
         case "/idealJob":
             return displayIdealJob(res);
+        case "/itTech":
+            return displayITTech(res);
         case "/projectIdea":
             return displayProjectIdea(res);
+        case "/references":
+            return displayReferences(res);    
         default:
             return display404(path, res);
     }
@@ -79,9 +85,44 @@ function displayIdealJob(res) {
 }
 
 // When someone visits the "http://localhost:3000/" path, this function is run.
+function displayIndustryData(res) {
+    // Here we use the fs package to read our index.html file
+    fs.readFile(__dirname + "./public/industryData.html", function (err, data) {
+        if (err) throw err;
+        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
+        // an html file.
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(data);
+    });
+}
+// When someone visits the "http://localhost:3000/" path, this function is run.
+function displayITTech(res) {
+    // Here we use the fs package to read our index.html file
+    fs.readFile(__dirname + "./public/itTech.html", function (err, data) {
+        if (err) throw err;
+        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
+        // an html file.
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(data);
+    });
+}
+
+// When someone visits the "http://localhost:3000/" path, this function is run.
 function displayProjectIdea(res) {
     // Here we use the fs package to read our index.html file
     fs.readFile(__dirname + "./public/projectIdea.html", function (err, data) {
+        if (err) throw err;
+        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
+        // an html file.
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(data);
+    });
+}
+
+// When someone visits the "http://localhost:3000/" path, this function is run.
+function displayReferences(res) {
+    // Here we use the fs package to read our index.html file
+    fs.readFile(__dirname + "./public/references.html", function (err, data) {
         if (err) throw err;
         // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
         // an html file.
@@ -118,8 +159,20 @@ app.get("/idealJob", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/idealJob.html"));
 });
 
+app.get("/industryData", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/industryData.html"));
+});
+
+app.get("/itTech", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/itTech.html"));
+});
+
 app.get("/projectIdea", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/projectIdea.html"));
+});
+
+app.get("/references", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/references.html"));
 });
 
 function getDataFromFile() {

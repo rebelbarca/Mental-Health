@@ -19,11 +19,7 @@ $(document).ready(function () {
                 $('#modalDisplay').empty();
                 // Log the queryURL
                 console.log(response);
-                var imageArr = [
-                    {image : 'assets/images/digiPic01.jpg'},
-                    {image : 'assets/images/digiPic02.jpg'},
-                    {image :'assets/images/digiPic03.jpg'}
-                ]
+
                 // Log the resulting object
                 for(var i = 0; i < response.length; i++) {
                     var profileId = response[i].id;
@@ -32,6 +28,7 @@ $(document).ready(function () {
                     // var personalImage = imageArr[i].image;
                     var profileImage = response[i].image;
                     var profileDescription = response[i].description;
+                    var paragraph01 = response[i].paragraph01;
                     var studentNum = response[i].studentNum;
                     var studentEmail = response[i].email;
                     var profileURL = response[i].url;
@@ -55,7 +52,8 @@ $(document).ready(function () {
                     'aria-labelledby': "staticBackdropLabel", 'aria-hidden': "true"});
 
                     var div02El = $('<div>').addClass('modal-dialog');
-                    // div02El.attr('role', 'document');
+                    div02El.attr('role', 'document');
+                    div02El.css('pointer-events', 'all');
 
                     var div03El = $('<div>').addClass('modal-content');
                     var div04El = $('<div>').addClass('modal-header');
@@ -98,8 +96,10 @@ $(document).ready(function () {
                     title04El.text('Website:');
                     websiteEl.text(profileURL);
 
-                    var cardTextEl = $('<p>').addClass('card-text');
-                    cardTextEl.text(profileDescription);
+                    var cardText01El = $('<p>').addClass('card-text');
+                    cardText01El.text(profileDescription);
+                    var cardText02El = $('<p>').addClass('card-text');
+                    cardText02El.text(paragraph01);
                     var div06El = $('<div>').addClass('modal-footer');
                     var btn03El = $('<button>').addClass('btn btn-secondary');
                     btn03El.attr({'type': 'button', 'data-bs-dismiss': 'modal'});
@@ -139,7 +139,9 @@ $(document).ready(function () {
                     row03El.append(websiteEl);
 
                     cardBodyEl.append(row03El);
-                    row03El.append(cardTextEl);
+                    row03El.append(cardText01El);
+                    cardBodyEl.append(row03El);
+                    row03El.append(cardText02El);
                     div02El.append(div06El);
                     div06El.append(btn03El);
 

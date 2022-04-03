@@ -39,6 +39,15 @@ html, body {
     padding: 8px 80px;
 }
 
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
 .navbar-brand {
     /* font-family: "Georgia", "Times New Roman", Times, serif; */
     font-family: Verdana, "Geneva", sans-serif;
@@ -85,7 +94,7 @@ html, body {
     font-family: "Georgia", "Times New Roman", Times, serif;
     text-align: center;
     padding: 5px 1px 5px 1px;
-    width: 100px;
+    width: 150px;
     /* border-style: solid;
     border-width: 1px;
     border-color: #cccccc; */
@@ -105,6 +114,7 @@ html, body {
     padding: 0;
     background-color: #212121;
     color: #ffffff !important;
+    /* text-align: left; */
 }
 
 .fa {
@@ -121,7 +131,7 @@ a:link {
 }
 
 a:hover {
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
     text-decoration: none;
 }
 
@@ -192,14 +202,24 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    color: #333333;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    font-size: 30px;
+}
+
 h3 {
     font-family: "Georgia", "Times New Roman", Times, serif;
     color: #333333;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
     /* padding-bottom: 20px; */
-    font-size: 28px;
+    font-size: 22px;
 }
 
 h5 {
