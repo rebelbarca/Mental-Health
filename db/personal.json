@@ -1,5 +1,4 @@
-[
-  {
+{
     "id": 1,
     "firstName": "Dhani", 
     "lastName": "Pozniak",
@@ -8,8 +7,9 @@
     "alt": "profile picture",
     "description": 
     "I am a self/ goal-driven person who can work independently and as part of a team. I live in Sydney with my wife and kids and have a bachelor's degree in Mechanical Engineering. My interest in IT began when I started pulling apart computers and putting them back together again. I am a highly motivated and hardworking individual. My education in full stack web development at the University of Sydney, and self-taught knowledge and experience combined with my interest, passion and enjoyment in coding, programming, Cloud Computing and Virtualization, will enable me to learn, contribute and excel in the Web Development Industry.",
-    "paragraph01":"My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilized in developing user-friendly web-based applications using html, CSS, JavaScript, bootstrap, jQuery and many more coding languages and concepts. My degree in Mechanical Engineering showed me that it is important that function and making sure that what you build or create works in the way you intend before you worry about how it will look. I enjoy working out how things work and why they function the way they do. I enjoy the programming and back-end side of things. I prefer being the person behind the scenes. I like challenging myself to prove to myself that I can accomplish anything that is thrown at me.",
-    "url": "https://pozengineer.github.io/cosc2196AssessmentTask1/ ",
+    "paragraph01":
+    "My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilized in developing user-friendly web-based applications using html, CSS, JavaScript, bootstrap, jQuery and many more coding languages and concepts. My degree in Mechanical Engineering showed me that it is important that function and making sure that what you build or create works in the way you intend before you worry about how it will look. I enjoy working out how things work and why they function the way they do. I enjoy the programming and back-end side of things. I prefer being the person behind the scenes. I like challenging myself to prove to myself that I can accomplish anything that is thrown at me.", 
+    "url": "https://pozengineer.github.io/cosc2196AssessmentTask1/",
     "github": "https://github.com/pozengineer/cosc2196AssessmentTask1/",
     "studentNum": "s3807705",
     "email": "s3807705@student.rmit.edu.au"
@@ -67,7 +67,7 @@
     "firstName": "Zenithon", 
     "lastName": "Ho",
     "image":
-    "",
+    "assets/images/photo 3.jpg",
     "alt": "profile picture",
     "description": 
     "My name is Zenithon Ho, but people call me Zen for short. Both my parents are from Hong Kong, but I was born in Australia. In my spare time, I play an online card game called Magic the Gathering: Arena, where I compete against other players whilst collecting cards.",
