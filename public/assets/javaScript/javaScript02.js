@@ -28,6 +28,7 @@ $(document).ready(function () {
                     // var personalImage = imageArr[i].image;
                     var profileImage = response[i].image;
                     var profileDescription = response[i].description;
+                    var profileParagraph = response[i].paragraph
                     var studentNum = response[i].studentNum;
                     var studentEmail = response[i].email;
                     var profileURL = response[i].url;
@@ -95,8 +96,10 @@ $(document).ready(function () {
                     title04El.text('Website:');
                     websiteEl.text(profileURL);
 
-                    var cardTextEl = $('<p>').addClass('card-text');
-                    cardTextEl.text(profileDescription);
+                    var cardText01El = $('<p>').addClass('card-text');
+                    cardText01El.text(profileDescription);
+                    var cardText02El = $('<p>').addClass('card-text');
+                    cardText02El.text(profileParagraph);
                     var div06El = $('<div>').addClass('modal-footer');
                     var btn03El = $('<button>').addClass('btn btn-secondary');
                     btn03El.attr({'type': 'button', 'data-bs-dismiss': 'modal'});
@@ -136,7 +139,9 @@ $(document).ready(function () {
                     row03El.append(websiteEl);
 
                     cardBodyEl.append(row03El);
-                    row03El.append(cardTextEl);
+                    row03El.append(cardText01El);
+                    cardBodyEl.append(row03El);
+                    row03El.append(cardText02El);
                     div02El.append(div06El);
                     div06El.append(btn03El);
 
