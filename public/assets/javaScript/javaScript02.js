@@ -19,11 +19,7 @@ $(document).ready(function () {
                 $('#modalDisplay').empty();
                 // Log the queryURL
                 console.log(response);
-                var imageArr = [
-                    {image : 'assets/images/digiPic01.jpg'},
-                    {image : 'assets/images/digiPic02.jpg'},
-                    {image :'assets/images/digiPic03.jpg'}
-                ]
+
                 // Log the resulting object
                 for(var i = 0; i < response.length; i++) {
                     var profileId = response[i].id;
