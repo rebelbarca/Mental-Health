@@ -85,7 +85,7 @@ function displayIdealJob(res) {
 }
 
 // When someone visits the "http://localhost:3000/" path, this function is run.
-function displayITTech(res) {
+function displayIndustryData(res) {
     // Here we use the fs package to read our index.html file
     fs.readFile(__dirname + "./public/industryData.html", function (err, data) {
         if (err) throw err;
@@ -120,7 +120,7 @@ function displayProjectIdea(res) {
 }
 
 // When someone visits the "http://localhost:3000/" path, this function is run.
-function displayITTech(res) {
+function displayReferences(res) {
     // Here we use the fs package to read our index.html file
     fs.readFile(__dirname + "./public/references.html", function (err, data) {
         if (err) throw err;

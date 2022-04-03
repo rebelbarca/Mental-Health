@@ -202,14 +202,24 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    color: #333333;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    font-size: 30px;
+}
+
 h3 {
     font-family: "Georgia", "Times New Roman", Times, serif;
     color: #333333;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
     /* padding-bottom: 20px; */
-    font-size: 28px;
+    font-size: 22px;
 }
 
 h5 {
