@@ -159,12 +159,20 @@ app.get("/idealJob", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/idealJob.html"));
 });
 
+app.get("/industryData", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/industryData.html"));
+});
+
 app.get("/itTech", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/itTech.html"));
 });
 
 app.get("/projectIdea", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/projectIdea.html"));
+});
+
+app.get("/references", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/references.html"));
 });
 
 function getDataFromFile() {
