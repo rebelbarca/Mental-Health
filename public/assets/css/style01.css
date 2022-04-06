@@ -89,7 +89,6 @@ html, body {
 .nav-item {
     /* position: absolute; */
     background-color: #212121;
-    top: 12px;
     font-size: 18px;
     font-family: "Georgia", "Times New Roman", Times, serif;
     text-align: center;
