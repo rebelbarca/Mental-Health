@@ -39,37 +39,43 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse"></div>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/"><i class="fab fa fa-home"></i><span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/idealJob">Ideal Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/industryData">Industry Data</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/itInterview">IT Interview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/itTech">IT Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projectIdea">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/meetings">Meetings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/references">Reference List</a>
-                    </li>
-                </ul>
+                <ul class="navbar-nav">
+                    <div class="navbar-nav">
+                        <div class="nav-item active">
+                            <a class="nav-link" href="/"><i class="fab fa fa-home"></i><span
+                                    class="sr-only">(current)</span></a>
+                            </div>
+                        <div class="dropDown">
+                            <button class="dropbtn">Team Profile</button> 
+                            <div class="dropDown-content">
+                            <a href="/idealJob">Ideal Job</a>
+                            <a href="/profile">Profile</a>
+                        </div>
+                        </div>  
+                        <div class="dropDown">
+                            <button class="dropbtn">IT Industry</button> 
+                            <div class="dropDown-content">
+                            <a href="/industryData">Industry Data</a>
+                            <a href="/itInterview">IT Interview</a>
+                            <a href="/itTech">IT Technologies</a>
+                        </div>
+                        </div>      
+                        <div class="dropDown">
+                            <button class="dropbtn">Project Idea</button> 
+                            <div class="dropDown-content">
+                            <a href="/projectIdea">Project Idea</a>
+                            </div>
+                            </div> 
+                        <div class="dropDown">
+                            <button class="dropbtn">MISC</button> 
+                            <div class="dropDown-content">
+                            <a href="/meetings">Meetings</a>
+                            <a href="/references">Reference List</a>
+                        </div>
+                        </div>    
+                 </div> 
             </div>
         </nav>
     </section>
