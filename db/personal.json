@@ -7,9 +7,10 @@
     "assets/images/dhani/profilePic01.jpg",
     "alt": "profile picture",
     "description": 
-    "I am a self/ goal-driven person who can work independently and as part of a team. I live in Sydney with my wife and kids and have a Bachelors Degree in Mechanical Engineering. My interest in IT began when I started pulling apart computers and putting them back together again. I am a highly motivated and hardworking individual. My education in full stack web development at the University of Sydney, and self-taught knowledge and experience combined with my interest, passion and enjoyment in coding, programming, Cloud Computing and Virtualization, will enable me to learn, contribute and excel in the Web Development Industry.",
-    "paragraph":"My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilized in developing user-friendly web-based applications using html, css, javaScript, bootstrap, jQuery and many more coding languages and concepts.My degree in Mechanical Engineering showed me that it is important that function and making sure that what you build or create works in the way you intend before you worry about how it will look. I enjoy working out how things work and why they function the way they do. I enjoy the programming and back-end side of things which is why I would like to maybe venture into game programming. Cyber-security is another field that I would like to try. I like challenging myself to prove to myself that I am capable accomplishing anything that is thrown at me.",
-    "url": "https://pozengineer.github.io/cosc2196AssessmentTask1/ ",
+    "I am a self/ goal-driven person who can work independently and as part of a team. I live in Sydney with my wife and kids and have a bachelor's degree in Mechanical Engineering. My interest in IT began when I started pulling apart computers and putting them back together again. I am a highly motivated and hardworking individual. My education in full stack web development at the University of Sydney, and self-taught knowledge and experience combined with my interest, passion and enjoyment in coding, programming, Cloud Computing and Virtualization, will enable me to learn, contribute and excel in the Web Development Industry.",
+    "paragraph01":
+    "My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilized in developing user-friendly web-based applications using html, CSS, JavaScript, bootstrap, jQuery and many more coding languages and concepts. My degree in Mechanical Engineering showed me that it is important that function and making sure that what you build or create works in the way you intend before you worry about how it will look. I enjoy working out how things work and why they function the way they do. I enjoy the programming and back-end side of things. I prefer being the person behind the scenes. I like challenging myself to prove to myself that I can accomplish anything that is thrown at me.", 
+    "url": "https://pozengineer.github.io/cosc2196AssessmentTask1/",
     "github": "https://github.com/pozengineer/cosc2196AssessmentTask1/",
     "studentNum": "s3807705",
     "email": "s3807705@student.rmit.edu.au"
@@ -19,15 +20,79 @@
     "firstName": "Justin", 
     "lastName": "Davis",
     "image":
-    "assets/images/justin/justinHeadShot.PNG",
+    "assets/images/justin/justinHeadShot.JPG",
     "alt": "profile picture",
     "description": 
     "My main hobby is gaming. I have multiple platforms I play on such as Xbox, PlayStation, Switch and PC however the platform I play on every night is my custom-built PC. I play a range of games with the most popular games recently being LOL, Battlefield, Rocket League, and Elden Rings.",
-    "paragraph":
+    "paragraph01":
     "I have been interested in computers and gaming since I was a young child. Some of my best childhood memories are of when my uncle would bring over new PC parts for us to upgrade our family computer and when he brought over new PC games for me to play. From there my interest sparked and I became the family nerd; anytime there was an IT issue it would be brought to me first to fix. Due to my lack of formal education and experience within the IT industry my experience to date is purely from an enthusiast level.", 
     "url": "https://juddy90.github.io/JustinDavisHTML/",
     "github": "https://github.com/Juddy90/",
     "studentNum": "s3941188",
     "email": "s394188@student.rmit.edu.au"
+  },
+  {
+    "id": 3,
+    "firstName": "Oliver", 
+    "lastName": "Abell",
+    "image":
+    "/assets/images/oliver/headShot.png",
+    "alt": "profile picture",
+    "description": 
+    "I am Australian with a little Polish heritage. I have completed all senior schooling up to and including finishing year 12. I can speak a little bit of German, though English is my main language. I am a passionate barista as well as a vivid cricket and AFL player. I have been playing cricket for the past decade and AFL for the past 2 years. I have been a barista since August last year.",
+    "paragraph01":
+    "My interest in IT started when I started playing the Xbox Classic. My personal interest with IT is the way that we can fundamentally manipulate everyday appliances/software to do anything that you can think of. My interest was sparked by my father and his brother. My experience is IT is a basic understanding of the fundamentals but have delved into some more advanced things in the recent past. I chose to go to RMIT as it was one of the best universities for IT/Programming. Recommended to me by my uncle as he was offered a place here when he went to university. I expect to further my knowledge of IT and programming during my studies as I see myself starting my own company once I have completed my studies.",
+    "url": "https://rebelbarca.github.io/Milk_Steamer_0.1/",
+    "github": "https://github.com/rebelbarca/",
+    "studentNum": "s3903759",
+    "email": "s3903759@student.rmit.edu.au"
+  },
+  {
+    "id": 4,
+    "firstName": "Nathan", 
+    "lastName": "Steele",
+    "image":
+    "assets/images/nathan/headShot.jpg",
+    "alt": "profile picture",
+    "description": 
+    "Hello, my name is Nathan Steele, I have been interested in IT for a while, but I have no previous education or much knowledge behind it. I love playing video games and have always been curious about how they are made and how other technology works. When seeing with new tech, my main question is, how does that work and what “language” is it using to communicate.",
+    "paragraph01":
+    "I live in Melbourne’s eastern suburbs with my partner and dog. My dogs’ name is Harper, and she is a Staffy x Labrador, I enjoy playing video games with my mates when I can and love a good beer! I used to want to own and run my bar (still do) which is a gaming lounge where people could come and drink and game, play tournaments and watch E-sports events.",
+    "url": "https://nangsgobrr.github.io/Assessment1/",
+    "github": "https://github.com/nangsgobrr/",
+    "studentNum": "s3591796",
+    "email": "s3591796@student.rmit.edu.au"
+  },
+  {
+    "id": 5,
+    "firstName": "Zenithon", 
+    "lastName": "Ho",
+    "image":
+    "assets/images/zenithon/photo 3.jpg",
+    "alt": "profile picture",
+    "description": 
+    "My name is Zenithon Ho, but people call me Zen for short. Both my parents are from Hong Kong, but I was born in Australia. In my spare time, I play an online card game called Magic the Gathering: Arena, where I compete against other players whilst collecting cards.",
+    "paragraph01":
+    "My interest in IT started when I was a very young age. The simple act of being connected to the world wide web and accessing information from our dial-up modem captivated me. Currently, I do not have much IT experience. My only knowledge of the languages are some small lessons done on websites such as freecodecamp.com and Codecademy. Through my studies at RMIT I would be expecting to learn how I would be integrating into the IT profession. Learning skills such as coding, working on projects, analysing and solving problems from the perspective of an IT professional.",
+    "url": "https://zenithon2022.github.io/Assessment1/",
+    "github": "https://github.com/zenithon2022/",
+    "studentNum": "s3951225",
+    "email": "s3951225@student.rmit.edu.au"
+  },
+  {
+    "id": 6,
+    "firstName": "Brearne", 
+    "lastName": "Gibson",
+    "image":
+    "assets/images/brearne/me.png",
+    "alt": "profile picture",
+    "description": 
+    "My name is Brearne. I am originally from Hobart, Tasmania. But I am now based in Melbourne. I have no hobbies. One not so fun fact about me is that I am currently quarantining with Covid-19 (Update 24th March 2022-now out from quarantine and covid free. Yay!).",
+    "paragraph01":
+    " I always enjoyed trying to repair things or set things up growing up. As an adult, I am fascinated with technology that now enhances our lives. I have an interest in big data. Data that can be used by programs to recommend certain decisions. Hence, you could say I have always had an interest in IT, but this has evolved with changing technology.", 
+    "url": "https://s3496168.github.io?I2IT-Assignment_1/",
+    "github": "https://github.com/s3496168/",
+    "studentNum": "s3496168",
+    "email": "s3496168@student.rmit.edu.au"
   }
 ]
