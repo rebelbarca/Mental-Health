@@ -179,11 +179,11 @@ function getDataFromFile() {
     });
 }
 
-function getMachineLearningFromFile() {
-    readDemoFile();
+function getPersonalityImagesFromFile() {
+    readPersonalityImagesFile();
     // Displays all notes
-    app.get("/api/demo", function (request, response) {
-        fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+    app.get("/api/personalityImages", function (request, response) {
+        fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
@@ -197,17 +197,17 @@ function getMachineLearningFromFile() {
         })
     });
     // Displays a single note, or returns false
-    app.get("/api/demo/:id", function (request, response) {
-        var chosen = request.params.character;
+    app.get("/api/personalityImages/:id", function (request, response) {
+        var chosen = request.params.id;
         console.log(chosen);
-        fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+        fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
             const noteArrayStr = JSON.parse(data);
-            console.log(noteArrayStr[0].routeName);
+            console.log(noteArrayStr[0].profileId);
             for (var i = 0; i < noteArrayStr.length; i++) {
-                if (chosen === noteArrayStr[i].routeName) {
+                if (chosen == noteArrayStr[i].profileId) {
                     return response.json(noteArrayStr[i]);
                 }
             }
@@ -217,7 +217,7 @@ function getMachineLearningFromFile() {
 }
 
 getDataFromFile();
-getMachineLearningFromFile();
+getPersonalityImagesFromFile();
 
 
 function readFile() {
@@ -230,7 +230,7 @@ function readFile() {
             const noteArray = [];
             const newDataArr = JSON.stringify(noteArray, null, 4)
     
-            fs.writeFile("./db/db.json", newDataArr, function (err) {
+            fs.writeFile("./db/personal.json", newDataArr, function (err) {
                 if (err) {
                     return console.log(err);
                 }
@@ -243,8 +243,8 @@ function readFile() {
         }
     });
 }
-function readDemoFile() {
-    fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+function readPersonalityImagesFile() {
+    fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
         if (err) {
             throw err;
         }
@@ -253,7 +253,7 @@ function readDemoFile() {
             const noteArray = [];
             const newDataArr = JSON.stringify(noteArray, null, 4)
     
-            fs.writeFile("./db/db.json", newDataArr, function (err) {
+            fs.writeFile("./db/personalityImages.json", newDataArr, function (err) {
                 if (err) {
                     return console.log(err);
                 }
