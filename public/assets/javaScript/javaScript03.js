@@ -1,8 +1,5 @@
 $(document).ready(function () {
     var personalURL = '/api/personalityImages';
-    $('.carousel').carousel({
-        interval: 5000
-    })
     getPersonalityDetails();
     
 
