@@ -1,0 +1,45 @@
+[
+    {
+      "profileId": 1,
+      "firstName": "Oliver",
+      "profileImage01":"/assets/images/oliver/myersBriggs.png",
+      "profileImage02":"/assets/images/oliver/learningStyle.png",
+      "profileImage03":"/assets/images/oliver/big5Factors.png"
+    },
+    {
+      "profileId": 2,
+      "firstName": "Zenithon",
+      "profileImage01":"/assets/images/zenithon/myersBriggs.jpg",
+      "profileImage02":"/assets/images/zenithon/learningStyle.jpg",
+      "profileImage03":"/assets/images/zenithon/Big5.jpg"
+    },
+    {
+      "profileId": 3,
+      "firstName": "Dhani",
+      "profileImage01":"/assets/images/dhani/myersBriggs.jpg",
+      "profileImage02":"",
+      "profileImage03":""
+    },
+    {
+      "profileId": 4,
+      "firstName": "Justin",
+      "profileImage01":"/assets/images/justin/justinPersonality.jpg",
+      "profileImage02":"",
+      "profileImage03":""
+    },
+    {
+      "profileId": 5,
+      "firstName": "Nathan",
+      "profileImage01":"/assets/images/nathan/myersBriggs.png",
+      "profileImage02":"",
+      "profileImage03":""
+    },
+    {
+      "profileId": 6,
+      "firstName": "Brearne",
+      "profileImage01":"/assets/images/brearne/16Personalities.png",
+      "profileImage02":"",
+      "profileImage03":""
+    }
+  ]
+  

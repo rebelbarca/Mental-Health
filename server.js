@@ -252,10 +252,10 @@ function getDataFromFile() {
 }
 
 function getMachineLearningFromFile() {
-    readDemoFile();
+    readpersonalityImagesFile();
     // Displays all notes
-    app.get("/api/demo", function (request, response) {
-        fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+    app.get("/api/personalityImages", function (request, response) {
+        fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
@@ -269,10 +269,10 @@ function getMachineLearningFromFile() {
         })
     });
     // Displays a single note, or returns false
-    app.get("/api/demo/:id", function (request, response) {
+    app.get("/api/personalityImages/:profileId", function (request, response) {
         var chosen = request.params.character;
         console.log(chosen);
-        fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+        fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
             if (err) {
                 throw err;
             }
@@ -315,8 +315,8 @@ function readFile() {
         }
     });
 }
-function readDemoFile() {
-    fs.readFile('./db/demo.json', 'utf8', (err, data) => {
+function readpersonalityImagesFile() {
+    fs.readFile('./db/personalityImages.json', 'utf8', (err, data) => {
         if (err) {
             throw err;
         }
