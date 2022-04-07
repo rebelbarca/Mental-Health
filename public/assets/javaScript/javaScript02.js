@@ -19,11 +19,7 @@ $(document).ready(function () {
                 $('#modalDisplay').empty();
                 // Log the queryURL
                 console.log(response);
-                var imageArr = [
-                    {image : 'assets/images/digiPic01.jpg'},
-                    {image : 'assets/images/digiPic02.jpg'},
-                    {image :'assets/images/digiPic03.jpg'}
-                ]
+
                 // Log the resulting object
                 for(var i = 0; i < response.length; i++) {
                     var profileId = response[i].id;
@@ -32,7 +28,7 @@ $(document).ready(function () {
                     // var personalImage = imageArr[i].image;
                     var profileImage = response[i].image;
                     var profileDescription = response[i].description;
-                    var profileParagraph = response[i].paragraph
+                    var paragraph01 = response[i].paragraph01;
                     var studentNum = response[i].studentNum;
                     var studentEmail = response[i].email;
                     var profileURL = response[i].url;
@@ -103,7 +99,7 @@ $(document).ready(function () {
                     var cardText01El = $('<p>').addClass('card-text');
                     cardText01El.text(profileDescription);
                     var cardText02El = $('<p>').addClass('card-text');
-                    cardText02El.text(profileParagraph);
+                    cardText02El.text(paragraph01);
                     var div06El = $('<div>').addClass('modal-footer');
                     var btn03El = $('<button>').addClass('btn btn-secondary');
                     btn03El.attr({'type': 'button', 'data-bs-dismiss': 'modal'});

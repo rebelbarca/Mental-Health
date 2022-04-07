@@ -25,19 +25,58 @@ $(document).ready(function () {
                 // Log the resulting object
                 
                 for(var i = 0; i < response.length; i++) {
-                    var profileId = response[i].id;
-                    var profileImage = response[i].image;
+                    var profileId = response[i].profileId;
+                    var profileImage01 = response[i].profileImage01;
+                    var profileImage02 = response[i].profileImage02;
+                    var profileImage03 = response[i].profileImage03;
 
                     var slideDivEl = $('<div>').addClass('carousel-item img-fluid');
                     slideDivEl.attr({'dataIndex': i});
 
                     var image01El = $('<img>').addClass('d-block w-100');
                     image01El.css('text-align', 'left');
-                    image01El.attr({'src': profileImage, 'alt': `${profileId} slide`});
+                    image01El.attr({'src': profileImage01, 'alt': `${profileId} slide`});
 
                     $('#carouselDisplay').append(slideDivEl);
                     slideDivEl.append(image01El);
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    var slideDivE2 = $('<div>').addClass('carousel-item img-fluid');
+                    slideDivE2.attr({'dataIndex': i});
+
+                    var image02El = $('<img>').addClass('d-block w-100');
+                    image02El.css('text-align', 'left');
+                    image02El.attr({'src': profileImage02, 'alt': `${profileId} slide`});
+
+                    $('#carouselDisplay').append(slideDivE2);
+                    slideDivE2.append(image02El);
+
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    var slideDivE3 = $('<div>').addClass('carousel-item img-fluid');
+                    slideDivE3.attr({'dataIndex': i});
+
+                    var image03El = $('<img>').addClass('d-block w-100');
+                    image03El.css('text-align', 'left');
+                    image03El.attr({'src': profileImage03, 'alt': `${profileId} slide`});
+
+                    $('#carouselDisplay').append(slideDivE3);
+                    slideDivE3.append(image03El);
                 }
+
+
+                
                 // $("#modalBtn").on('click', profileBtn);
                 
             },
