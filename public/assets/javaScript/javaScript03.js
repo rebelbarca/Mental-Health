@@ -3,10 +3,10 @@ $(document).ready(function () {
     $('.carousel').carousel({
         interval: 5000
     })
-    getPersonalDetails();
+    getPersonalityDetails();
     
 
-    function getPersonalDetails() {
+    function getPersonalityDetails() {
         // Here we run our AJAX call to the OpenWeatherMap API
         $.ajax({
             url: personalURL,
