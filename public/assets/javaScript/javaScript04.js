@@ -39,7 +39,7 @@ $(document).ready(function () {
                     var paragraph03El = $('<p>');
                     paragraph03El.text(para03El);
                     var paragraph04El = $('<p>');
-                    paragraph014El.text(para04El);
+                    paragraph04El.text(para04El);
                     var paragraph05El = $('<p>');
                     paragraph05El.text(para05El);
                     var paragraph06El = $('<p>');
