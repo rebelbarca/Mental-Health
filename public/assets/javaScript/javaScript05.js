@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    var personalURL = '/api/idealJob';
-    getidealJobDetails();
+    var personalURL = '/api/itTech';
+    getitTechDetails();
     
 
-    function getidealJobDetails() {
+    function getitTechDetails() {
         // Here we run our AJAX call to the OpenWeatherMap API
         $.ajax({
             url: personalURL,
@@ -29,6 +29,9 @@ $(document).ready(function () {
                     var para05El = response[i].paragraph05;
                     var para06El = response[i].paragraph06;
                     var para07El = response[i].paragraph07;
+                    var para08El = response[i].paragraph08;
+                    var para09El = response[i].paragraph09;
+                    var para010El = response[i].paragraph10;
 
 
 
@@ -46,18 +49,27 @@ $(document).ready(function () {
                     paragraph06El.text(para06El);
                     var paragraph07El = $('<p>');
                     paragraph07El.text(para07El);
+                    var paragraph08El = $('<p>');
+                    paragraph08El.text(para08El);
+                    var paragraph09El = $('<p>');
+                    paragraph09El.text(para09El);
+                    var paragraph10El = $('<p>');
+                    paragraph10El.text(para010El);
                     var breakEl = $('<hr/>');
 
 
 
-                    $(`#idealJob${i}`).append(paragraph01El);
-                    $(`#idealJob${i}`).append(paragraph02El);
-                    $(`#idealJob${i}`).append(paragraph03El);
-                    $(`#idealJob${i}`).append(paragraph04El);
-                    $(`#idealJob${i}`).append(paragraph05El);
-                    $(`#idealJob${i}`).append(paragraph06El);
-                    $(`#idealJob${i}`).append(paragraph07El);
-                    $(`#idealJob${i}`).append(breakEl);
+                    $(`#itTech${i}`).append(paragraph01El);
+                    $(`#itTech${i}`).append(paragraph02El);
+                    $(`#itTech${i}`).append(paragraph03El);
+                    $(`#itTech${i}`).append(paragraph04El);
+                    $(`#itTech${i}`).append(paragraph05El);
+                    $(`#itTech${i}`).append(paragraph06El);
+                    $(`#itTech${i}`).append(paragraph07El);
+                    $(`#itTech${i}`).append(paragraph08El);
+                    $(`#itTech${i}`).append(paragraph09El);
+                    $(`#itTech${i}`).append(paragraph10El);
+                    $(`#itTech${i}`).append(breakEl);
                 }
                 
             },
