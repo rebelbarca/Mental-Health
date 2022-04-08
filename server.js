@@ -288,8 +288,87 @@ function getPersonalityImagesFromFile() {
     });
 }
 
+function getidealJobDetailsFromFile() {
+    readidealJobDetailsFile();
+    // Displays all notes
+    app.get("/api/itTech", function (request, response) {
+        fs.readFile('./db/itTech.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            // console.log(noteArrayStr);
+            // console.log(noteArrayStr[0].routeName);
+            noteArrayStr.forEach(element => {
+                // console.log(element.routeName);
+            })
+            return response.json(noteArrayStr);
+        })
+    });
+    // Displays a single note, or returns false
+    app.get("/api/itTech/:id", function (request, response) {
+        var chosen = request.params.id;
+        console.log(chosen);
+        fs.readFile('./db/itTech.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            console.log(noteArrayStr[0].profileId);
+            for (var i = 0; i < noteArrayStr.length; i++) {
+                if (chosen == noteArrayStr[i].profileId) {
+                    return response.json(noteArrayStr[i]);
+                }
+            }
+            return response.json(false);
+        })
+    });
+}
+
+function getitTechDetailsFromFile() {
+    readitTechDetailsFile();
+    // Displays all notes
+    app.get("/api/idealJob", function (request, response) {
+        fs.readFile('./db/idealJob.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            // console.log(noteArrayStr);
+            // console.log(noteArrayStr[0].routeName);
+            noteArrayStr.forEach(element => {
+                // console.log(element.routeName);
+            })
+            return response.json(noteArrayStr);
+        })
+    });
+    // Displays a single note, or returns false
+    app.get("/api/idealJob/:id", function (request, response) {
+        var chosen = request.params.id;
+        console.log(chosen);
+        fs.readFile('./db/idealJob.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            console.log(noteArrayStr[0].profileId);
+            for (var i = 0; i < noteArrayStr.length; i++) {
+                if (chosen == noteArrayStr[i].profileId) {
+                    return response.json(noteArrayStr[i]);
+                }
+            }
+            return response.json(false);
+        })
+    });
+}
+
+
+
+
 getDataFromFile();
 getPersonalityImagesFromFile();
+getidealJobDetailsFromFile();
+getitTechDetailsFromFile();
 
 
 function readFile() {
@@ -327,6 +406,54 @@ function readPersonalityImagesFile() {
             const newDataArr = JSON.stringify(noteArray, null, 4)
     
             fs.writeFile("./db/personalityImages.json", newDataArr, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+            });
+            console.log(newDataArr);
+        }
+        else {
+        const noteArrayStr = JSON.parse(data);
+        console.log(noteArrayStr);
+        }
+    });
+}
+
+function readidealJobDetailsFile() {
+    fs.readFile('./db/idealJob.json', 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        else if (!data) {
+            console.log('No array in saveFile please create new array!');
+            const noteArray = [];
+            const newDataArr = JSON.stringify(noteArray, null, 4)
+    
+            fs.writeFile("./db/idealJob.json", newDataArr, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+            });
+            console.log(newDataArr);
+        }
+        else {
+        const noteArrayStr = JSON.parse(data);
+        console.log(noteArrayStr);
+        }
+    });
+}
+
+function readitTechDetailsFile() {
+    fs.readFile('./db/itTech.json', 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        else if (!data) {
+            console.log('No array in saveFile please create new array!');
+            const noteArray = [];
+            const newDataArr = JSON.stringify(noteArray, null, 4)
+    
+            fs.writeFile("./db/itTech.json", newDataArr, function (err) {
                 if (err) {
                     return console.log(err);
                 }
