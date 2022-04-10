@@ -31,7 +31,7 @@ $(document).ready(function () {
                     var para07El = response[i].paragraph07;
                     var para08El = response[i].paragraph08;
                     var para09El = response[i].paragraph09;
-                    var para010El = response[i].paragraph10;
+                    var para10El = response[i].paragraph10;
 
 
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
                     var paragraph09El = $('<p>');
                     paragraph09El.text(para09El);
                     var paragraph10El = $('<p>');
-                    paragraph10El.text(para010El);
+                    paragraph10El.text(para10El);
                     var breakEl = $('<hr/>');
 
 
