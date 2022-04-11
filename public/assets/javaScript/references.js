@@ -17,6 +17,7 @@ $(document).ready(function () {
             },
             
             success: function(response) {
+                $(`#reference`).empty();
                 // Log the queryURL
                 console.log(response);
                 // Log the resulting object
@@ -29,13 +30,13 @@ $(document).ready(function () {
 
 
 
-                    var referenceEl = $('<p>');
+                    var referenceEl = $('<li>');
                     referenceEl.text(refEl);
 
                     var breakEl = $('<hr/>');
 
 
-                    $(`#references${i}`).append(displaydiv);
+                    $(`#reference`).append(displaydiv);
 
                     displaydiv.append(referenceEl);
 
