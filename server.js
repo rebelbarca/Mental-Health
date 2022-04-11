@@ -569,7 +569,7 @@ function readitIndustryFile() {
     });
 }
 
-function readreferencesFile() {
+function readreferencesDetailsFile() {
     fs.readFile('./db/references.json', 'utf8', (err, data) => {
         if (err) {
             throw err;
