@@ -16,6 +16,7 @@ $(document).ready(function () {
                 }
             },
             success: function(response) {
+                $(`#meetings`).empty();
                 // Log the queryURL
                 console.log(response);
                 // Log the resulting object
@@ -53,7 +54,7 @@ $(document).ready(function () {
 
 
 
-                    $(`#meetings${i}`).append(displaydiv);
+                    $(`#meetings`).append(displaydiv);
                     
                     displaydiv.append(rowDivEl);
                     rowDivEl.append(meetingDate01);
