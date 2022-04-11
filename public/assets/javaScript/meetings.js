@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    var personalURL = '/api/references';
-    getreferencesDetails();
+    var personalURL = '/api/meetings';
+    getmeetingsDetails();
     
 
-    function getreferencesDetails() {
+    function getmeetingsDetails() {
         // Here we run our AJAX call to the OpenWeatherMap API
         $.ajax({
             url: personalURL,
@@ -15,29 +15,51 @@ $(document).ready(function () {
                     return;
                 }
             },
-            
             success: function(response) {
                 // Log the queryURL
                 console.log(response);
                 // Log the resulting object
                 
                 for(var i = 0; i < response.length; i++) {
-                    var itemIdEl = response[i].sectionId;
-                    var refEl = response[i].reference;
+                    var itemIdEl = response[i].id;
+                    var date01El = response[i].meetingDate01;
+                    var agenda01El = response[i].agendaLink01;
+                    var video01El = response[i].videoLink01;
+                    var minutes01El = response[i].minutesLink01;
 
                     var displaydiv = $('<div>')
 
+                    var rowDivEl = $('<div>').addClass("row");
+
+                    var meetingDate01 = $('<p>').addClass("col-md-3");
+                    meetingDate01.text(date01El);
+                    
+
+                    var agendaLink01 = $('<a>').addClass("col-md-3");
+                    agendaLink01.attr({'href': agenda01El, 'target': '_blank'});
+                    agendaLink01.text('Agenda Link');
 
 
-                    var referenceEl = $('<p>');
-                    referenceEl.text(refEl);
+                    var videoLink01 = $('<a>').addClass("col-md-3");
+                    videoLink01.attr({'href': video01El, 'target': '_blank'});
+                    videoLink01.text('Video Link');
+
+
+                    var minutesLink01 = $('<a>').addClass("col-md-3");
+                    minutesLink01.attr({'href': minutes01El, 'target': '_blank'});
+                    minutesLink01.text('Minutes Link');
 
                     var breakEl = $('<hr/>');
 
 
-                    $(`#references${i}`).append(displaydiv);
 
-                    displaydiv.append(referenceEl);
+                    $(`#meetings${i}`).append(displaydiv);
+                    
+                    displaydiv.append(rowDivEl);
+                    rowDivEl.append(meetingDate01);
+                    rowDivEl.append(agendaLink01);   
+                    rowDivEl.append(videoLink01);
+                    rowDivEl.append(minutesLink01);
 
                     displaydiv.append(breakEl);
                 }
