@@ -81,7 +81,7 @@ $(document).ready(function () {
 
                     $(`#itTech`).append(displaydiv);
 
-                    displaydiv.append(head01El)
+                    displaydiv.append(headingEl)
                     displaydiv.append(paragraph01El);
                     displaydiv.append(paragraph02El);
                     displaydiv.append(paragraph03El);
