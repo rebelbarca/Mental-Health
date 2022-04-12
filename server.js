@@ -475,7 +475,42 @@ function getmeetingsFromFile() {
     });
 }
 
-
+function getInterviewsDetailsFile() {
+    readInterviewDetailsFile();
+    // Displays all notes
+    app.get("/api/interview", function (request, response) {
+        fs.readFile('./db/interview.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            // console.log(noteArrayStr);
+            // console.log(noteArrayStr[0].routeName);
+            noteArrayStr.forEach(element => {
+                // console.log(element.routeName);
+            })
+            return response.json(noteArrayStr);
+        })
+    });
+    // Displays a single note, or returns false
+    app.get("/api/interview/:id", function (request, response) {
+        var chosen = request.params.id;
+        console.log(chosen);
+        fs.readFile('./db/interview.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            console.log(noteArrayStr[0].profileId);
+            for (var i = 0; i < noteArrayStr.length; i++) {
+                if (chosen == noteArrayStr[i].profileId) {
+                    return response.json(noteArrayStr[i]);
+                }
+            }
+            return response.json(false);
+        })
+    });
+}
 
 getDataFromFile();
 getPersonalityImagesFromFile();
@@ -484,6 +519,7 @@ getitTechDetailsFromFile();
 getitIndustryFromFile();
 getreferencesFromFile();
 getmeetingsFromFile();
+getInterviewsDetailsFile();
 
 
 function readFile() {
@@ -654,6 +690,30 @@ function readmeetingsDetailsFile() {
     });
 }
 
+
+function readInterviewDetailsFile() {
+    fs.readFile('./db/interview.json', 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        else if (!data) {
+            console.log('No array in saveFile please create new array!');
+            const noteArray = [];
+            const newDataArr = JSON.stringify(noteArray, null, 4)
+    
+            fs.writeFile("./db/interview.json", newDataArr, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+            });
+            console.log(newDataArr);
+        }
+        else {
+        const noteArrayStr = JSON.parse(data);
+        console.log(noteArrayStr);
+        }
+    });
+}
 
 // Starts the server to begin listening
 // =============================================================
