@@ -475,7 +475,7 @@ function getmeetingsFromFile() {
     });
 }
 
-function getInterviewsDetailsFile() {
+function getinterviewDetails() {
     readInterviewDetailsFile();
     // Displays all notes
     app.get("/api/interview", function (request, response) {
@@ -519,7 +519,7 @@ getitTechDetailsFromFile();
 getitIndustryFromFile();
 getreferencesFromFile();
 getmeetingsFromFile();
-getInterviewsDetailsFile();
+getinterviewDetails();
 
 
 function readFile() {

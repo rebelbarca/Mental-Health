@@ -89,7 +89,7 @@ $(document).ready(function () {
                     var breakEl = $('<hr/>');
                     
                     
-                    $(`#interview`).append(displayDiv)
+                    $(`#interview`).append(displayDiv);
 
 
                     displayDiv.append(paragraph01El);
