@@ -1,24 +1,5 @@
 [
   {
-    "sectionId": 0,
-    "heading": "Machine Learning",
-    "paragraph01":"",
-    "paragraph02":"",
-    "paragraph03":"",
-    "paragraph04":"",
-    "paragraph05":"",
-    "paragraph06":"",
-    "paragraph07":"",
-    "paragraph08":"",
-    "paragraph09":"",
-    "paragraph10":"",
-    "paragraph11":"",
-    "paragraph12":"",
-    "paragraph13":"",
-    "paragraph14":"",
-    "paragraph15":""    
-  },
-  {
     "sectionId": 1,
     "heading": "Cybersecurity ",
     "paragraph01":"At its core, the purpose of cybersecurity is to protect all technology from cyber threats. Cyber-attacks are targeted at systems, networks, software, and hardware are generally accomplished by fooling system users into handing over details or by exploiting vulnerabilities. The four main principles in cybersecurity are to identify risks, protect from risks, detect risks, and respond to breaches.",
