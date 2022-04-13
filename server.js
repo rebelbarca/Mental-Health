@@ -47,6 +47,8 @@ function handleRequest(req, res) {
             return displayMeetings(res);          
         case "/references":
             return displayReferences(res);    
+        case "/reflection":
+            return displayReflection(res);   
         default:
             return display404(path, res);
     }
@@ -160,6 +162,18 @@ function displayReferences(res) {
     });
 }
 
+// When someone visits the "http://localhost:3000/" path, this function is run.
+function displayReflection(res) {
+    // Here we use the fs package to read our index.html file
+    fs.readFile(__dirname + "./public/reflection.html", function (err, data) {
+        if (err) throw err;
+        // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
+        // an html file.
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(data);
+    });
+}
+
 // When someone visits any path that is not specifically defined, this function is run.
 function display404(url, res) {
     var myHTML = "<html>" +
@@ -210,6 +224,10 @@ app.get("/meetings", function (req, res) {
 
 app.get("/references", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/references.html"));
+});
+
+app.get("/reflection", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/reflection.html"));
 });
 
 function getDataFromFile() {
@@ -438,6 +456,43 @@ function getreferencesFromFile() {
     });
 }
 
+function getReflectionDetails() {
+    readReflectionDetails();
+    // Displays all notes
+    app.get("/api/reflection", function (request, response) {
+        fs.readFile('./db/reflection.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            // console.log(noteArrayStr);
+            // console.log(noteArrayStr[0].routeName);
+            noteArrayStr.forEach(element => {
+                // console.log(element.routeName);
+            })
+            return response.json(noteArrayStr);
+        })
+    });
+    // Displays a single note, or returns false
+    app.get("/api/reflection/:id", function (request, response) {
+        var chosen = request.params.id;
+        console.log(chosen);
+        fs.readFile('./db/reflection.json', 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+            const noteArrayStr = JSON.parse(data);
+            console.log(noteArrayStr[0].profileId);
+            for (var i = 0; i < noteArrayStr.length; i++) {
+                if (chosen == noteArrayStr[i].profileId) {
+                    return response.json(noteArrayStr[i]);
+                }
+            }
+            return response.json(false);
+        })
+    });
+}
+
 function getmeetingsFromFile() {
     readmeetingsDetailsFile();
     // Displays all notes
@@ -520,6 +575,7 @@ getitIndustryFromFile();
 getreferencesFromFile();
 getmeetingsFromFile();
 getinterviewDetails();
+getReflectionDetails();
 
 
 function readFile() {
@@ -702,6 +758,30 @@ function readInterviewDetailsFile() {
             const newDataArr = JSON.stringify(noteArray, null, 4)
     
             fs.writeFile("./db/interview.json", newDataArr, function (err) {
+                if (err) {
+                    return console.log(err);
+                }
+            });
+            console.log(newDataArr);
+        }
+        else {
+        const noteArrayStr = JSON.parse(data);
+        console.log(noteArrayStr);
+        }
+    });
+}
+
+function readReflectionDetails() {
+    fs.readFile('./db/reflection.json', 'utf8', (err, data) => {
+        if (err) {
+            throw err;
+        }
+        else if (!data) {
+            console.log('No array in saveFile please create new array!');
+            const noteArray = [];
+            const newDataArr = JSON.stringify(noteArray, null, 4)
+    
+            fs.writeFile("./db/reflection.json", newDataArr, function (err) {
                 if (err) {
                     return console.log(err);
                 }
