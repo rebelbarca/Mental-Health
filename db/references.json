@@ -13,30 +13,190 @@
   },
   {
     "sectionId": 3,
-    "reference":""
+    "reference":"Australian Cyber Security Centre 2020, Denial of Service, Australian Cyber Security Centre, viewed 30 March 2022, <https://www.cyber.gov.au/acsc/view-all-content/threats/denial-service>"
   },
   {
     "sectionId": 4,
-    "reference":""
+    "reference":"Australian Cyber Security Centre 2020, Malware, Australian Cyber Security Centre, viewed 30 March 2022, <https://www.cyber.gov.au/acsc/view-all-content/threats/malware> "
   },
   {
     "sectionId": 5,
-    "reference":""
+    "reference":"Australian Institute of Health and Wellbeing 2021, Social Isolation and Loneliness, Australian Institute of Health and Wellbeing, viewed 14 April 2022, <https://www.aihw.gov.au/reports/australias-welfare/social-isolation-and-loneliness-covid-pandemic> "
   },
   {
     "sectionId": 6,
-    "reference":""
+    "reference":"Australian Trade and Investment Commission 2018, Connected and Automated Vehicles, Australian Trade and Investment Commission, viewed 6 April 2022, <https://www.austrade.gov.au/future-transport/connected-automated-vehicles/> "
   },
   {
     "sectionId": 7,
-    "reference":""
+    "reference":"Bakker, D, Kazantzis, N, Rickwood, D & Rickard, N 2016, ‘Mental Health Smartphone Apps: Review and Evidence-Based Recommendations for Future Developments,JMIR Mental Health, vol. 3, pp 7"
   },
   {
     "sectionId": 8,
-    "reference":""
+    "reference":"Burns, E 2021, In-Depth Guide to Machine Learning in the Enterprise, SearchEnterpriseAI, viewed 10 April 2022, <https://www.techtarget.com/searchenterpriseai/In-depth-guide-to-machine-learning-in-the-enterprise> "
   },
   {
     "sectionId": 9,
-    "reference":""
+    "reference":"Burns, E 2022, What Is Machine Learning and Why Is It Important?, SearchEnterpriseAI, viewed 10 April 2022, <https://www.techtarget.com/searchenterpriseai/definition/machine-learning-ML#:~:text=Machine%20learning%20(ML)%20is%20a,to%20predict%20new%20output%20values>"
+  },
+  { 
+    "sectionId": 10,
+    "reference":"Business 2021, Protect your business from cyber threats, Business, viewed 30 March 2022, <https://business.gov.au/online/cyber-security/protect-your-business-from-cyber-threats>"
+  },
+  {
+    "sectionId": 11,
+    "reference":"CISCO 2022, What is Cybersecurity, CISCO, viewed 30 March 2022, <https://www.cisco.com/c/en_au/products/security/what-is-cybersecurity.html>"
+  },
+  {
+    "sectionId": 12,
+    "reference":"David, R John S 2022, What is Blockchain?, Forbes Advisor website, viewed 7 April 2022, <https://www.forbes.com/advisor/investing/what-is-blockchain/>"
+  },
+  {
+    "sectionId": 13,
+    "reference":"Department of Industry 2018, Australia’s Tech Future, viewed 10 April 2022, <https://www.industry.gov.au/sites/default/files/2018-12/australias-tech-future.pdf>"
+  },
+  {
+    "sectionId": 14,
+    "reference":"Deloitte 2022, The rise of using cryptocurrency in business, Deloitte, viewed 3 April 2022, <https://www2.deloitte.com/us/en/pages/audit/articles/corporates-using-crypto.html>"
+  },
+  {
+    "sectionId": 15,
+    "reference":"Dominic, P 2022, You can download art with a click. So what’s the point of owning an NFT, and why are they worth so much?, The Sydney Morning Herald website, viewed 2 April 2022, <https://www.smh.com.au/business/entrepreneurship/they-re-digital-desirable-and-can-be-worth-millions-but-what-are-nfts-20220203-p59tfn.html>"
+  },
+  {
+    "sectionId": 16,
+    "reference":"Dosal, E 2020, Top 9 Cybersecurity Threats and Vulnerabilities, COMPUQUIP Cybersecurity, viewed 30 March 2022, <https://www.compuquip.com/blog/cybersecurity-threats-vulnerabilities>"
+  },
+  {
+    "sectionId": 17,
+    "reference":"EQUIFAX 2022, How Cyber Attacks Happen, EQUIFAX, viewed 30 March 2022, <https://www.equifax.co.uk/resources/identity-protection/how-cyber-attacks-happen.html#:~:text=Cyber%20attacks%20are%20much%20more,personal%20information%20under%20false%20pretences>"
+  },
+  {
+    "sectionId": 18,
+    "reference":"Firenze, A 2020, 14 Essential App Development Team Skills You Must Have, Ascendle, viewed 19 March 2022, <https://ascendle.com/ideas/14-skills-your-app-development-team-must-have/>"
+  },
+  {
+    "sectionId": 19,
+    "reference":"Hayes, A 2022, Blockchain Explained, Investopedia, viewed 27th March 2022, <https://www.investopedia.com/terms/b/blockchain.asp>"
+  },
+  {
+    "sectionId": 20,
+    "reference":"Heath, N 2020, What is machine learning? Everything you need to know, ZDNet, viewed 10 April 2022, <https://www.zdnet.com/article/what-is-machine-learning-everything-you-need-to-know/>"
+  },
+  {
+    "sectionId": 21,
+    "reference":"Heath, N 2020, What is machine learning? Everything you need to know, ZDNet, viewed 10 April 2022, <https://www.zdnet.com/article/what-is-machine-learning-everything-you-need-to-know/>"
+  },
+  {
+    "sectionId": 22,
+    "reference":"IBM 2022, What is blockchain technology?, IBM website, viewed 7 April 2022, <https://www.ibm.com/topics/what-is-blockchain>"
+  },
+  {
+    "sectionId": 23,
+    "reference":"IBM 2020, What is Machine Learning?, IBM, viewed 10 April 2022, <https://www.ibm.com/cloud/learn/machine-learning>"
+  },
+  {
+    "sectionId": 24,
+    "reference":"Jeffrey, M 2022, Demystifying Cryptocurrencies, Blockchain and ICOs, Finance, viewed 3 April 2022, <https://www.toptal.com/finance/market-research-analysts/cryptocurrency-market>"
+  },
+  {
+    "sectionId": 25,
+    "reference":"Julian, D 2022, 5 Predictions for bitcoin, NFTs and the future of money, cnet, viewed 8 April 2022, <https://www.cnet.com/personal-finance/crypto/5-predictions-for-bitcoin-nfts-and-the-future-of-money/#:~:text=NFTs%20create%20new%20ownership%20opportunities,the%20art%20and%20collectibles%20scenes>"
+  },
+  {
+    "sectionId": 26,
+    "reference":"Kaspersky 2022, What is cryptocurrency and how does it work?, Kaspersky website, viewed 2 April 2022, <https://www.kaspersky.com/resource-center/definitions/what-is-cryptocurrency> "
+  },
+  {
+    "sectionId": 27,
+    "reference":"Kenneth, G 2022, The Future of Cryptocurrency, Cloud Security Alliance website, viewed 8 April 2022, <https://cloudsecurityalliance.org/blog/2022/02/17/the-future-of-cryptocurrency/>"
+  },
+  {
+    "sectionId": 28,
+    "reference":"Labour Market Insights 2022, Software and Applications Programmers, Labour Market Insights, viewed 14 April 2022, <https://labourmarketinsights.gov.au/occupation-profile/software-and-applications-programmers?occupationCode=2613#overview> "
+  },
+  {
+    "sectionId": 29,
+    "reference":"Molla R 2021, Self-driving cars: The 21st-century trolley problem, Vox, viewed 7 April 2022, <https://www.vox.com/recode/22700022/self-driving-autonomous-cars-trolley-problem-waymo-google-tesla>"
+  },
+  {
+    "sectionId": 30,
+    "reference":"Naomi J. Alpern, Robert J. Shimonski  2010, CHAPTER 1 - Network Fundamentals, Eleventh Hour Network +, viewed 2nd April 2022, <https://www.sciencedirect.com/topics/computer-science/peer-to-peer-networks#:~:text=In%20a%20peer-to-peer,their%20computer%20with%20other%20users> "
+  },
+  {
+    "sectionId": 31,
+    "reference":"Nathan, R 2021, What’s the Environmental impact of Cryptocurrency?, Investopedia, viewed 3 April 2022, <https://www2.deloitte.com/us/en/pages/ahttps://www.investopedia.com/tech/whats-environmental-impact-cryptocurrency/udit/articles/corporates-using-crypto.html>"
+  },
+  {
+    "sectionId": 32,
+    "reference":"Nibley, B, 2021, 'Blockchain Application: 9 Ways to Use It That You’ve Never Thought About', SoFi, blog post, December 16, viewed 27 March 2022, <https://www.sofi.com/learn/content/blockchain-applications/>"
+  },
+  {
+    "sectionId": 33,
+    "reference":"Nina, B 2021, Ethereum’s Co-Founder Vitalik Buterin donates Over $1 Billion to India Covid Relief Fund and other Charities, Forbes website, viewed 7 April 2022, <https://www.forbes.com/sites/ninabambysheva/2021/05/12/ethereums-co-founder-vitalik-buterin-donates-over-1-billion-to-india-covid-relief-fund-and-other-charities/?sh=53abd3216548>"
+  },
+  {
+    "sectionId": 34,
+    "reference":"Robyn, C John S 2022, What is an NFT? Non-Fungible Tokens Explained, Forbes Advisor website, viewed 2 April 2022, <https://www.forbes.com/advisor/investing/nft-non-fungible-token/>"
+  },
+  {
+    "sectionId": 35,
+    "reference":"Ruben, E 2021, The Growing Pressures Single Dads Face Raising Children, Offspring Magazine, viewed 14 April 2022, < https://www.offspringmagazine.com.au/babies/growing-pressures-for-single-dads/>"
+  },
+  {
+    "sectionId": 36,
+    "reference":"Ryan, H 2021, You can buy more things than ever with Crypto. Here’s why you shouldn’t, NextAdvisor website, viewed 3 April 2022, <https://time.com/nextadvisor/investing/cryptocurrency/should-you-use-crypto-like-cash/>"
+  },
+  {
+    "sectionId": 37,
+    "reference":"SAS 2022, Machine Learning: What it is and why it matters, SAS, viewed 10 April 2022, <https://www.sas.com/en_au/insights/analytics/machine-learning.html#machine-learning-importance>"
+  },
+  {
+    "sectionId": 38,
+    "reference":"Selig, J 2022, What Is Machine Learning? A Definition, Expert.ai, viewed 10 April 2022, <https://www.expert.ai/blog/machine-learning-definition/>"
+  },
+  {
+    "sectionId": 39,
+    "reference":"Terrapass 2021, Blockchain for Social Impact: The Good, Bad and in Between, Terrapass, viewed 8 April 2022, <https://terrapass.com/blog/blockchain-social-impact-good-bad>"
+  },
+  {
+    "sectionId": 40,
+    "reference":"TKEY 2018, Blockchain technology: How will it affect the job market?, Medium, viewed 8 April 2022, <https://tkeyorg.medium.com/blockchain-technology-how-it-will-affect-the-job-market-72b2950f76357"
+  },
+  {
+    "sectionId": 41,
+    "reference":"Transport for NSW 2022, Future mobility and services, Transport for NSW, viewed 6 April 2022, <https://future.transport.nsw.gov.au/future-transport-strategy/future-mobility-and-services/connected-and-automated-vehicles>"
+  },
+  {
+    "sectionId": 42,
+    "reference":"Velimirovic, A 2021, How to Prevent DDoS Attacks: 7 Tried-and-Tested Methods, pheonixNAP, viewed 30 March 2022, <https://phoenixnap.com/blog/prevent-ddos-attacks>"
+  },
+  {
+    "sectionId": 43,
+    "reference":"White, T 2018, Autonomous driving levels explained, Carsguide, viewed 7 April 2022, <https://www.carsguide.com.au/car-advice/autonomous-driving-levels-explained-47106>"
+  },
+  {
+    "sectionId": 44,
+    "reference":"Whitney, L 2021, How to protect your organization and users against malicious emails, TechRepublic, viewed 30 March 2022, <https://www.techrepublic.com/article/how-to-protect-your-organization-and-users-against-malicious-emails/>"
+  },
+  {
+    "sectionId": 45,
+    "reference":"Yev 2015, The 3-2-1 Backup Strategy, Backblaze, viewed 30 March 2022, <https://www.backblaze.com/blog/the-3-2-1-backup-strategy/>"
+  },
+  {
+    "sectionId": 46,
+    "reference":"National Skills Commission, 2021 Skills Priority List, viewed 5 April 2022, < https://www.nationalskillscommission.gov.au/publications/2021-skills-priority-list>"
+  },
+  {
+    "sectionId": 47,
+    "reference":"Labour Insight Jobs 2018, Skills in Greatest Demand (Baseline Skills), Burning Glass Technology, viewed 7 April 2022, <https://rmit.instructure.com/courses/96673/files/22264778/download?download_frd=1>"
+  },
+  {
+    "sectionId": 48,
+    "reference":"Labour Insight Jobs 2018, Top Titles, Burning Glass Technology, viewed 7 April 2022, < https://rmit.instructure.com/courses/96673/files/22264612/download?wrap=1 >"
+  },  
+  {
+    "sectionId": 49,
+    "reference":"Labour Insight Jobs 2018, Skills in Greatest Demand (Specialised Skills), Burning Glass Technology, viewed 7 April 2022, < https://rmit.instructure.com/courses/96673/files/22264779/download?wrap=1 >"
   }
 ]
