@@ -29,19 +29,7 @@ $(document).ready(function () {
                     var para05El = response[i].paragraph05;
                     var para06El = response[i].paragraph06;
                     var para07El = response[i].paragraph07;
-                    var para08El = response[i].paragraph08;
-                    var para09El = response[i].paragraph09;
-                    var para10El = response[i].paragraph10;
-                    var para11El = response[i].paragraph11;
-                    var para12El = response[i].paragraph12;
-                    var para13El = response[i].paragraph13;
-                    var para14El = response[i].paragraph14;
-                    var para15El = response[i].paragraph15;
-                    var para16El = response[i].paragraph16;
-                    var para17El = response[i].paragraph17;
-                    var para18El = response[i].paragraph18;
-                    var para19El = response[i].paragraph19;
-                    var para20El = response[i].paragraph20;
+
 
 
 
@@ -60,32 +48,6 @@ $(document).ready(function () {
                     paragraph06El.text(para06El);
                     var paragraph07El = $('<p>');
                     paragraph07El.text(para07El);
-                    var paragraph08El = $('<p>');
-                    paragraph08El.text(para08El);
-                    var paragraph09El = $('<p>');
-                    paragraph09El.text(para09El);
-                    var paragraph10El = $('<p>');
-                    paragraph10El.text(para10El);
-                    var paragraph11El = $('<p>');
-                    paragraph11El.text(para11El);
-                    var paragraph12El = $('<p>');
-                    paragraph12El.text(para12El);
-                    var paragraph13El = $('<p>');
-                    paragraph13El.text(para13El);
-                    var paragraph14El = $('<p>');
-                    paragraph14El.text(para14El);
-                    var paragraph15El = $('<p>');
-                    paragraph15El.text(para15El);
-                    var paragraph16El = $('<p>');
-                    paragraph16El.text(para16El);
-                    var paragraph17El = $('<p>');
-                    paragraph17El.text(para17El);
-                    var paragraph18El = $('<p>');
-                    paragraph18El.text(para18El);
-                    var paragraph19El = $('<p>');
-                    paragraph19El.text(para19El);
-                    var paragraph20El = $('<p>');
-                    paragraph20El.text(para20El);
                     var breakEl = $('<hr/>');
                     
                     
@@ -99,19 +61,7 @@ $(document).ready(function () {
                     $(`#itIndustry${i}`).append(paragraph05El);
                     $(`#itIndustry${i}`).append(paragraph06El);
                     $(`#itIndustry${i}`).append(paragraph07El);
-                    $(`#itIndustry${i}`).append(paragraph08El);
-                    $(`#itIndustry${i}`).append(paragraph09El);
-                    $(`#itIndustry${i}`).append(paragraph10El);
-                    $(`#itIndustry${i}`).append(paragraph11El);
-                    $(`#itIndustry${i}`).append(paragraph12El);
-                    $(`#itIndustry${i}`).append(paragraph13El);
-                    $(`#itIndustry${i}`).append(paragraph14El);
-                    $(`#itIndustry${i}`).append(paragraph15El);
-                    $(`#itIndustry${i}`).append(paragraph16El);
-                    $(`#itIndustry${i}`).append(paragraph17El);
-                    $(`#itIndustry${i}`).append(paragraph18El);
-                    $(`#itIndustry${i}`).append(paragraph19El);
-                    $(`#itIndustry${i}`).append(paragraph20El);
+
                     $(`#itIndustry${i}`).append(breakEl);
                 }
                 
