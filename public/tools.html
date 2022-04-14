@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eunoi-Aware</title>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,12 +21,12 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-
     <header class='mainTitle'>
         <div class="row brandname">
             <div class="col-sm-12 col-md-6 offset-md-3 navLogo">
-                <a class="navbar-brand" href="/"><img src="assets/images/Logo/eunio-aware transparentWebsite.png"
-                        alt="Company Logo" class="logoImage"></a>
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/Logo/eunio-aware transparentWebsite.png" alt="Company Logo" class="logoImage">
+                </a>
             </div>
         </div>
     </header>
@@ -83,80 +82,29 @@
 
     <section id="mainContent">
         <div class="container">
-            <!-- row01 -->
             <div class="row">
                 <div class="col-md-12">
-                    <h1><b>Group Personality</b></h1>
+                    <h1><b>Tools</b></h1>
                     <hr>
                 </div>
             </div>
-     
-            <div class="row" id="profile0">
-                <h2>Oliver Abell</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay0">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/oliver/myersBriggs.png" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
+                
+            <div class="row">
+                <p>In this assessment we have used a mix of HTML, JavaScript and JSONs to build out our website. All changes to our files have all been uploaded into GIT by using a different branch per group member and using pull requests to merge them back into main. This website is being deployed on HEROKU through the link below.</p>
+                <p>GitHub Repository Link: <a href="https://github.com/rebelbarca/Mental-Health" target="_blank">https://github.com/rebelbarca/Mental-Health</a></p>
+                <p>Website Link: <a href="https://fathomless-gorge-99950.herokuapp.com" target="_blank">https://fathomless-gorge-99950.herokuapp.com</a></p>
+                        <hr>
+                <div class="meetingsRow">                    
+                    <h2>Meetings</h2> 
 
-            <div class="row" id="profile1">
-                <h2>Zenithon Ho</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay1">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/zenithon/myersBriggs.jpg" alt="First slide">
-                        </div>
-                    </div>
+                    <div id="meetings">
                 </div>
-            </div>
 
-            <div class="row" id="profile2">
-                <h2>Dhani louis Shaya Pozniak</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay2">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/dhani/myersBriggs.jpg" alt="First slide">
-                        </div>
-                    </div>
+                <div class="auditTrail">
+                    <h2>Audit Trail</h2>
+                    <p>While the audit trail is comprehensive and demonstrates distinct levels of contribution from group members, in certain cases it does not entirely represent the amount of effort done by each group member. While some group members have many commits and contributions to building the website, others handled a lot of the reporting side and did not have as much to do with the website building.</p>
                 </div>
             </div>
-
-            <div class="row" id="profile3">
-                <h2>Justin Davis</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay3">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/justin/justinPersonality.jpg" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="profile4">
-                <h2>Nathan Steele</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay4">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/nathan/myersBriggs.png" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="profile5">
-                <h2>Brearne Gibson</h2>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" id="carouselDisplay5">
-                        <div class="carousel-item active img-fluid">
-                            <img class="d-block w-100" src="/assets/images/brearne/16Personalities.png" alt="First slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </section>
     <div class="push"></div>
@@ -171,20 +119,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javaScript/moment.min.js"></script>
-    <script type="text/javascript" src="assets/javaScript/javaScript02.js"></script>
-    <script type="text/javascript" src="assets/javaScript/moment.min.js"></script>
-    <script>
-        $('.carousel').carousel({
-        interval: 5000
-    })
-    </script>
-    <script type="text/javascript" src="assets/javaScript/personality.js"></script>
+    <script type="text/javascript" src="assets/javaScript/javaScript01.js"></script>
+    <script type="text/javascript" src="assets/javaScript/meetings.js"></script>
     <script>
         function myFunction() {
             var x = document.getElementById("collapse");
@@ -195,6 +137,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>
