@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 
 
-                    var referenceEl = $('<p>');
+                    var referenceEl = $('<li>');
                     referenceEl.text(refEl);
 
                     var breakEl = $('<hr/>');
