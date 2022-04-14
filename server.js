@@ -43,8 +43,8 @@ function handleRequest(req, res) {
             return displayITTech(res);
         case "/projectIdea":
             return displayProjectIdea(res);
-        case "/meetings":
-            return displayMeetings(res);          
+        case "/tools":
+            return displayTools(res);          
         case "/references":
             return displayReferences(res);    
         case "/reflection":
@@ -139,9 +139,9 @@ function displayProjectIdea(res) {
 }
 
 // When someone visits the "http://localhost:3000/" path, this function is run.
-function displayMeetings(res) {
+function displayTools(res) {
     // Here we use the fs package to read our index.html file
-    fs.readFile(__dirname + "./public/meetings.html", function (err, data) {
+    fs.readFile(__dirname + "./public/tools.html", function (err, data) {
         if (err) throw err;
         // We then respond to the client with the HTML page by specifically telling the browser that we are delivering
         // an html file.
@@ -218,8 +218,8 @@ app.get("/projectIdea", function (req, res) {
     res.sendFile(path.join(__dirname, "./public/projectIdea.html"));
 });
 
-app.get("/meetings", function (req, res) {
-    res.sendFile(path.join(__dirname, "./public/meetings.html"));
+app.get("/tools", function (req, res) {
+    res.sendFile(path.join(__dirname, "./public/tools.html"));
 });
 
 app.get("/references", function (req, res) {
