@@ -40,6 +40,8 @@ $(document).ready(function () {
                     var para13El = response[i].paragraph13;
                     var para14El = response[i].paragraph14;
                     var para15El = response[i].paragraph15;
+                    var para16El = response[i].paragraph16;
+                    var para17El = response[i].paragraph17;
 
                     var displaydiv = $('<div>');
                     var headingEl = $('<h2>')
@@ -77,6 +79,10 @@ $(document).ready(function () {
                     paragraph14El.text(para14El);
                     var paragraph15El = $('<p>');
                     paragraph15El.text(para15El);
+                    var paragraph16El = $('<p>');
+                    paragraph16El.text(para16El);
+                    var paragraph17El = $('<p>');
+                    paragraph17El.text(para17El);
                     var breakEl = $('<hr/>');
 
                     $(`#itTech`).append(displaydiv);
@@ -97,6 +103,8 @@ $(document).ready(function () {
                     displaydiv.append(paragraph13El);
                     displaydiv.append(paragraph14El);
                     displaydiv.append(paragraph15El);
+                    displaydiv.append(paragraph16El);
+                    displaydiv.append(paragraph17El);
                     displaydiv.append(breakEl);
                 }
                 

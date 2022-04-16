@@ -28,7 +28,7 @@
     "json-stringify-safe": "^5.0.1",
     "mysql": "^2.18.1",
     "path": "^0.12.7",
-    "require": "^2.4.20",
+    "require": "^0.4.4",
     "util": "^0.12.4"
   }
 }
